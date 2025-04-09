@@ -1,0 +1,43 @@
+:root {
+    --dark-red: #8B0000;
+    --light-red: #FFCCCC;
+    --highlight-red: #FFCCCC ;
+    --white: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar {
+    width: 100%;
+    padding: 18px 30px;
+    background: linear-gradient(to right, var(--dark-red), var(--highlight-red));
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    letter-spacing: 1px;
+  }
+  
+  .navbar div {
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    animation: fadeInSlide 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeInSlide {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
